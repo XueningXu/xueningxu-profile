@@ -72,6 +72,9 @@ a:hover {
   100% {
     opacity: 1; } }
 .main-nav {
+  width: 100%;
+  position: fixed;
+  z-index: 200;
   background: #f4f4f4;
   padding-top: 23px; }
   .main-nav nav ul li a {
@@ -104,7 +107,7 @@ a:hover {
   .intro h1:before {
     position: absolute;
     left: -220px;
-    top: -150px;
+    top: -80px;
     font-size: 270px;
     z-index: -1;
     color: #f4f4f4; }
