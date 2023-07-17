@@ -142,7 +142,7 @@ a:hover {
     color: #8c8c8c; }
 
 .quote {
-  background: url(../img/bg1.jpg);
+  background: url(../img/bg.jpg);
   background-size: cover;
   background-position: center;
   transition: background-image 0.5s ease;
