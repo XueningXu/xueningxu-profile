@@ -75,7 +75,7 @@ a:hover {
   width: 100%;
   position: fixed;
   z-index: 200;
-  background: #f4f4f4;
+  background: #F3E4E4;
   padding-top: 23px; }
   .main-nav nav ul li a {
     color: #a7a7a7; }
@@ -110,7 +110,7 @@ a:hover {
     top: -80px;
     font-size: 270px;
     z-index: -1;
-    color: #f4f4f4; }
+    color: #F3E4E4; }
   .intro h1 span {
     font-size: 47px; }
 
