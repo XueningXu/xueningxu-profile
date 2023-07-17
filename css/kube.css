@@ -1393,6 +1393,8 @@ input.input-smaller {
 .navbar {
   font-size: 105%;
   margin-bottom: 1.65em;
+  position: fixed;
+  z-index: 9999;
 }
 .navbar:after {
   content: "";
