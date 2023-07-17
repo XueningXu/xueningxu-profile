@@ -202,5 +202,20 @@
 
 		typeSpeed:50,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>
+	<script>
+		// JavaScript code here
+		const quoteElement = document.querySelector('.quote');
+		const images = ['../img/bg.jpg', '../img/bg1.jpg']; // Add more image URLs as needed
+		let currentImageIndex = 0;
+	
+		function changeBackgroundImage() {
+		  	quoteElement.style.background = `url(${images[currentImageIndex]})`;
+			quoteElement.style.backgroundSize = "cover";
+			quoteElement.style.backgroundPosition = "center"; 
+		  	currentImageIndex = (currentImageIndex + 1) % images.length;
+		}
+	
+		setInterval(changeBackgroundImage, 3000); // Change image every 5 seconds
+	  </script>
 </body>
 </html>
