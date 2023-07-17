@@ -73,9 +73,10 @@ a:hover {
     opacity: 1; } }
 .main-nav {
   width: 100%;
+  top: 0;
   position: fixed;
   z-index: 200;
-  background: #F3E4E4;
+  background: #F4F4F4;
   padding-top: 23px; }
   .main-nav nav ul li a {
     color: #a7a7a7; }
@@ -110,7 +111,7 @@ a:hover {
     top: -80px;
     font-size: 270px;
     z-index: -1;
-    color: #F3E4E4; }
+    color: #F4F4F4; }
   .intro h1 span {
     font-size: 47px; }
 
