@@ -106,6 +106,24 @@ h6 {
   vertical-align: baseline;
   background: transparent;
 }
+h7 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+h8 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 a:active,
 a:hover {
   outline: 0;
@@ -268,6 +286,8 @@ h3,
 h4,
 h5,
 h6,
+h7,
+h8,
 .h1,
 .h2,
 .h3,
@@ -277,6 +297,19 @@ h6,
   font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
   font-weight: bold;
   color: #000000;
+  text-rendering: optimizeLegibility;
+  margin: 0 0 .5em 0;
+}
+.h7 {
+  font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-rendering: optimizeLegibility;
+  margin: 0 0 .5em 0;
+}
+.h8 {
+  font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  color:#8c8c8c;
   text-rendering: optimizeLegibility;
   margin: 0 0 .5em 0;
 }
@@ -317,6 +350,14 @@ h6,
 .h6 {
   font-size: 0.75em;
   text-transform: uppercase;
+}
+h7,
+.h7 {
+  font-size: 1.15em;
+}
+h8,
+.h8 {
+  font-size: 1em;
 }
 /* =Lead
 -----------------------------------------------------------------------------*/
@@ -2906,6 +2947,11 @@ input[type="submit"].btn-white.btn-outline.btn-active {
 .dropdown footer {
   padding: 20px;
 }
+ul.custom-list {
+  padding: 0;
+  margin-left: 20px;
+  font-size: 15px;
+}
 ul.dropdown {
   max-height: 300px;
   list-style: none;
@@ -3514,6 +3560,12 @@ ul.dropdown li.divider {
   h6 {
     font-size: 0.75em;
   }
+  h7 {
+    font-size: 1.15em;    
+  }
+  h8 {
+    font-size: 1em; 
+  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -3538,6 +3590,12 @@ ul.dropdown li.divider {
   }
   h6 {
     font-size: 0.75em;
+  }
+  h7 {
+    font-size: 1.15em;
+  }
+  h8 {
+    font-size: 1em;
   }
   .lead {
     font-size: 1.2em;
@@ -3617,6 +3675,14 @@ ul.dropdown li.divider {
   .h6,
   h6 {
     font-size: 12pt;
+  }
+  .h7,
+  h7 {
+    font-size: 20pt; 
+  }
+  .h8,
+  h8 {
+    font-size: 14pt; 
   }
   a,
   a:visited {

@@ -114,7 +114,6 @@ a:hover {
 .work .work-list {
   margin-left: 0px; }
   .work .work-list li {
-    list-style: none;
     font-size: 0.9375em;
     color: #8c8c8c; }
     .work .work-list li a {
@@ -157,3 +156,32 @@ footer {
       font-size: 1.25em;
       color: #999999; }
 
+.clickable-box {
+  display: inline-block;
+  border: 2px solid #666666;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  color: #666;
+  transition: background-color 0.3s ease;
+}
+
+.clickable-box:hover {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.box-content {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul.reduced-indent {
+  padding-left: 20px;
+}
+
+ul.reduced-indent li {
+  margin-left: -15px;
+}
