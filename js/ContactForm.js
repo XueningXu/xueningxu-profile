@@ -66,7 +66,7 @@ function ContactForm() {
             )}
             <div className="contact-photo">
                 <img 
-                    src="img/ava.jpg" 
+                    src="img/xu.jpg" 
                     alt="Xuening Xu" 
                     className="photo" 
                 />
