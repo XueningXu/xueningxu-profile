@@ -80,9 +80,11 @@ a:hover {
   padding-top: 23px; }
   .main-nav nav ul li a {
     color: #a7a7a7; }
-  .main-nav nav ul li.active a {
-    color: #4d4d4d; }
-
+  .main-nav nav ul li a.active {
+    color: #4d4d4d; 
+    font-weight: bold;
+  }
+  
 .section.second {
   margin-bottom: 90px; }
 .section .container {
@@ -280,4 +282,8 @@ ul.reduced-indent li {
   color: #fff;
   z-index: 1000;
   border-radius: 5px;
+}
+
+.nav-link {
+  color: #a7a7a7;
 }

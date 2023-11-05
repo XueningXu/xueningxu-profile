@@ -1445,7 +1445,7 @@ input.input-smaller {
 .navbar li.active a,
 .navbar span {
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
   color: rgba(0, 0, 0, 0.4);
 }
 .navigation-toggle {
@@ -1550,7 +1550,7 @@ input.input-smaller {
 .nav li.active a,
 .nav span {
   text-decoration: none;
-  cursor: text;
+  cursor: pointer;
   color: rgba(0, 0, 0, 0.4);
 }
 .nav i.fa {
