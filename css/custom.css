@@ -248,7 +248,7 @@ ul.reduced-indent li {
 .photo {
   width: 150px; /* Adjust the size as needed */
   height: 150px; /* Adjust the size as needed */
-  border-radius: 50%; /* Makes the photo circular */
+  border-radius: 10%; /* Makes the photo circular */
   object-fit: cover; /* Ensures the image covers the area without distortion */
 }
 
