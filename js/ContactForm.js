@@ -1,11 +1,10 @@
-// js/ContactForm.js
-//import React, { useState } from 'react';
 const { useState } = React;
 
 function ContactForm() {
     const [form, setForm] = useState({
         name: '',
         email: '',
+        subject: '',
         message: ''
     });
     const [showToast, setShowToast] = useState(false);
@@ -17,14 +16,17 @@ function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Here you would handle the form submission.
+
+        // Get the reCAPTCHA response token from the global grecaptcha object
+        const recaptchaResponse = grecaptcha.getResponse();
+
+        // Here handle the form submission.
         console.log(form);
 
-
         // Convert form state to a format that can be sent (e.g., JSON)
-        const formData = JSON.stringify(form);
+        const formData = JSON.stringify({ ...form, recaptchaResponse });
 
-        // Send the form data to your backend server
+        // Send the form data to backend server
         fetch('https://remains.ddns.net:46315/send-email', {
             method: 'POST',
             headers: {
@@ -39,13 +41,15 @@ function ContactForm() {
             return response.text();
         })
 
-
         // reset form after sending messages
         setForm({
             name: '',
             email: '',
+            subject: '',
             message: ''
         });
+        // Reset the reCAPTCHA widget
+        grecaptcha.reset();
 
         // notify user of successful send
         setShowToast(true);
@@ -89,6 +93,16 @@ function ContactForm() {
                         required
                     />
                 </div> 
+                <div className="input-row">
+                    <input
+                        type="text"
+                        name="subject"
+                        value={form.subject}
+                        onChange={handleChange}
+                        placeholder="Subject*"
+                        required
+                    />
+                </div>
                 <textarea
                     name="message"
                     value={form.message}
@@ -96,8 +110,9 @@ function ContactForm() {
                     placeholder="Message"
                     required
                 />
-                <div className="button-container">
-                    <button type="submit">Send</button>
+                <div className="recaptcha-button-wrapper">
+                    <div className="g-recaptcha" data-sitekey="6LewAvooAAAAAAP98pvAGKGsXp48upCa3tiN7ETa"></div>
+                    <button type="submit" className="send-button">Send</button>
                 </div>
                 </form>
             </div>

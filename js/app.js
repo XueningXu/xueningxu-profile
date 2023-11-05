@@ -1,5 +1,3 @@
-// js/app.js
-
 const ContactForm = window.ContactForm;
 
 const container = document.getElementById('contactForm');

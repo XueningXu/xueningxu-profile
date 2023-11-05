@@ -239,7 +239,7 @@ ul.reduced-indent li {
 
 .contact-photo {
   flex-shrink: 0; /* Prevent the photo from shrinking */
-  margin-top: -10px;
+  margin-top: 15px;
   text-align: center;
 }
 
@@ -260,18 +260,23 @@ ul.reduced-indent li {
   gap: 15px; /* Adjust the gap between the inputs as needed */
 }
 
-.button-container {
+.recaptcha-button-wrapper {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.send-button {
+  margin-left: 10px;
 }
 
 .toast {
   position: fixed;
-  bottom: 20px;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
-  background-color: #1E90FF; /* A light green background to signify success */
+  background-color: #1E90FF;
   color: #fff;
   z-index: 1000;
   border-radius: 5px;
