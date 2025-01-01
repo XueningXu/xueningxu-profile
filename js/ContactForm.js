@@ -70,8 +70,8 @@ function ContactForm() {
                     alt="Xuening Xu" 
                     className="photo" 
                 />
-                <p>xuening0912@gmail.com<br />
-                +1(215) 433-8928</p> 
+                <p><a href="mailto:xuening0912@gmail.com">xuening0912@gmail.com</a><br />
+                <a href="tel:+1215-433-8928">+1(215) 433-8928 </a></p> 
             </div> 
             <div className="contact-form">
                 <form onSubmit={handleSubmit}>
