@@ -1,5 +1,3 @@
-import React from 'react';
-
 const { useState } = React;
 
 function ContactForm() {
@@ -68,7 +66,7 @@ function ContactForm() {
             )}
             <div className="contact-photo">
                 <img 
-                    src="img/xu.jpg" 
+                    src="img/xuening_profile.jpg" 
                     alt="Xuening Xu" 
                     className="photo" 
                 />

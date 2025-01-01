@@ -241,13 +241,13 @@ ul.reduced-indent li {
 
 .contact-photo {
   flex-shrink: 0; /* Prevent the photo from shrinking */
-  margin-top: 15px;
+  margin-top: 0px;
   text-align: center;
 }
 
 .photo {
-  width: 150px; /* Adjust the size as needed */
-  height: 150px; /* Adjust the size as needed */
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Adjust the size as needed */
   border-radius: 10%; /* Makes the photo circular */
   object-fit: cover; /* Ensures the image covers the area without distortion */
 }

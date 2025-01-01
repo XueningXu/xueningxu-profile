@@ -1,5 +1,3 @@
-import ReactDOM from 'react-dom';
-
 const ContactForm = window.ContactForm;
 
 const container = document.getElementById('contactForm');
